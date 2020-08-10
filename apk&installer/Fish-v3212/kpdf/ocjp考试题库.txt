@@ -1,0 +1,2897 @@
+
+ 
+
+
+
+
+    } 
+
+ 
+
+   int 
+   byte 
+   long 
+   short 
+   float 
+   double 
+ 
+ 
+
+:short类型的x，除以double类型的y，再乘int的2，所以结果是double类型的。注意
+x。 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+overload和override。对于overload，只有参数列表不同，才
+B错在方法名相同，但只有返
+C和D是正确的overload。对于override，则访问控制关键字只能更
+异常只能是超类方法抛出的异常的子类，也可以不抛出。返回类型，参数列表必
+A是正确的override。 
+ 
+ 
+ 
+   public static void main(String args[]){  
+   try{return;}  
+   finally{ System.out.println("Finally");}  
+   }  
+   }  
+ 
+
+ 
+
+
+ 
+
+的问题。程序中如果遇到return，则finally块先被执行，然后再执行
+，而finally块后面的语句将不被执行。如果遇到System.exit(1)，则finally块及其后的
+ 
+ 
+ 
+） public class Test{  
+） public static String output="";  
+） public static void foo(int i){  
+）   try {  
+）        if(i==1){  
+）                    throw new Exception();  
+）               }  
+）         output +="1";  
+）       }  
+）     catch(Exception e){  
+）                     output+="2";  
+）                     return;  
+）                      }  
+）     finally{  
+）                output+="3";  
+）           }  
+）      output+="4";  
+） }  
+） public static void main(String args[]){  
+）              foo(0);  
+）              foo(1);  
+）     
+）   }  
+） }  
+ 
+ 
+ 
+
+foo(0)时，执行第8条语句，output=1，然后执行语句15，output=13，然后是17
+output=134，因为是static类型的变量，所以任何对其值的修改都有效。执行第二条foo(1),
+5，结果抛出异常，转到catch块，output=1342，finally任何情况下都执行，所
+output=13423，然后return跳出方法体，所以output=13423 
+．  
+）public class IfElse{  
+）public static void main(String args[]){  
+）if(odd(5))  
+）System.out.println("odd");  
+）else  
+）System.out.println("even");  
+）}  
+）public static int odd(int x){return x%2;}    
+）}  
+ 
+ 
+编译错误。 
+中的判断条件的结果必须是boolean类型的。注意这里说的是结果. 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+）class ExceptionTest{  
+）public static void main(String args[]){  
+）try{  
+）methodA();  
+）}catch(IOException e){  
+）System.out.println("caught IOException");  
+）}catch(Exception e){  
+）System.out.println("caught Exception");  
+） }  
+） }  
+）}  
+ 
+ 
+
+methodA()抛出IOExecption，被语句6捕获，输出caught IOException，然后呢？？然
+ 
+． 
+）int i=1,j=10;  
+）do{  
+）         if(i++>--j) continue;  
+）}while(i<5);  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+i=4，j=6时，执行完语句3后，i会++，这时i就等于了5，continue
+D。 
+． 
+ 
+         public Object m(){  
+                       Object o=new Float(3.14F);  
+                       Object[] oa=new Object[1];  
+                       oa[0]=o;  
+                       o=null;  
+                       oa[0]=null;  
+）                       System.out.println(oa[0]);  
+                                 }  
+                            }  
+ 
+   
+ 
+   
+   
+ 
+ 
+
+6行后，仍然有对象指向o，所以o不能满足条件，当第7条语句被执行后，就再
+o了，所以选D。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    
+  1) interface Foo{  
+  2)          int k=0;  
+  3)    }  
+  4) public class Test implements Foo{  
+  5)             public static void main(String args[]){  
+  6)                        int i;  
+  7)                          Test test =new Test();  
+  8)                           i=test.k;  
+  9)                           i=Test.k;  
+10)                          i=Foo.k;  
+11)                           }  
+12) }  
+ 
+
+
+
+
+
+
+ 
+
+ 
+．  
+保留) words in java?  
+ 
+ 
+ 
+ 
+ 
+ 
+，D 
+． 
+）public class Test{  
+） public static void main(String[] args){  
+） String foo=args[1];  
+） Sring bar=args[2];  
+） String baz=args[3];  
+） }  
+） }  
+java Test Red Green Blue  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+. the program throw an exception  
+ 
+ 
+ 
+
+执行java Test Red Green Blue时，数组args只有[0][1][2]，运行时
+这个异常会被抛出，数组越界。 
+． 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+0，所以baz=0+1=1 
+．  
+（行为） of a float?  
+A. float foo= -1;  
+B. float foo=1.0;  
+C. float foo=42e1;  
+D. float foo=2.02f;  
+E. float foo=3.03d;  
+F. float foo=0x0123;  
+ 
+，D，F 
+double类型，所以出错。说一下A和C的区别吧，-1系统会认为是
+int类型，把int类型再赋给float类型的foo，当然没错了，可C就不同啦，42e1是int
+ 
+． 
+）public class Foo{  
+） public static void main(String args[]){  
+） String s;  
+） System.out.println("s="+s);  
+） }  
+） }  
+what is the result?  
+ 
+ 
+（初始化）.  
+（引用）. 
+
+ 
+
+ 
+ 
+．  
+1) public class Test{  
+2) public static void main(String args[]){  
+3) int i=oxFFFFFFF1;  
+4) int j=~i;  
+5)  
+6) }  
+7) }  
+ 
+      
+    
+    
+    
+     
+ 
+ 
+
+ 
+ 
+．  
+ 
+ 
+ 
+ 
+   
+   
+   
+ 
+ 
+ 
+ 
+
+两边类型不同不相等。所以A和C不等。equals只能用于引用类型，不能用于基本类型，
+D不对，而且两边类型不兼容的话,即使对象的内容一样,也不相等，所以E和F不对。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+）public class Test{  
+） public static void add3(Integer i){  
+）       int val=i.intValue();  
+）       val+=3;  
+）       i=new Integer(val);  
+） }  
+） public static void main(String args[]){  
+）      Integer i=new Integer(0);  
+）      add3(i);  
+）      System.out.println(i.intValue());  
+） } 
+）}  
+what is the result?  
+A. compile fail        
+B.print out "0"       
+C.print out "3"    
+D.compile succeded but exception at line 3  
+ 
+
+New，重新分配了内存空间。所以此i非彼i啦。 
+． 
+）public class Test{  
+） public static void main(String[] args){  
+）   System.out.println(6^3); //,^?为XOR 
+）   }  
+）     }  
+what is output?  
+ 
+算呗。 
+． 
+） public class Test{  
+） public static void stringReplace(String text){  
+）   text=text.replace('j','l');  
+） }  
+） public static void bufferReplace(StringBuffer text){  
+）    text=text.append("c");  
+）   }  
+） public static void main(String args[]){    
+）   String textString=new String("java");  
+）   StringBuffer textBuffer=new StringBuffer("java");  
+）    StringReplace(textString);  
+）    bufferReplace(textBuffer);  
+） System.out.println(textString+textBuffer);  
+）    }  
+）    }  
+what is the output?  
+ 
+
+是String类型的，具有不变性，语句3其实是创建了一个新的字符串，而不是修
+textString，而对于StringBuffer类型的对象，则所有修改都是实在的。所以在语句
+中textBuffer变成了javac，所以输出为javajavac。 
+ 
+． 
+）public class ConstOver{  
+） public ConstOver(int x, int y, int z){}  
+） }  
+which two overload the ConstOver constructor?  
+A.ConstOver(){}  
+B.protected int ConstOver(){}  
+C.private ConstOver(int z, int y, byte x){}  
+D.public void ConstOver(byte x, byte y, byte z){}  
+E.public Object ConstOver(int x, int y, int z){}  
+ 
+
+overload，参数列表必须不同，方法名相同，访问控制无限制。也无异常限制。
+B，D和E不对，因为构造器不能有返回类型。 
+． 
+）public class MethodOver{  
+） public void setVar(int a, int b, float c){}  
+） }  
+which overload the setVar?  
+A.private void setVar(int a, float c, int b){}  
+B.protected void setVar(int a, int b, float c){}  
+C.public int setVar(int a, float c, int b){return a;}  
+D.public int setVar(int a, float c){return a;}  
+ 
+
+无访问控制限制，所以A对，顺序也属于参数列表，顺序不同也一样是overload，
+C正确，D当然正确了，参数列表明显不同。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+）class EnclosingOne{  
+）public class InsideOne{}  
+） }  
+）public class InnerTest{  
+） public static void main(String args[]){  
+） EnclosingOne eo=new EnclosingOne();  
+） //insert code here  
+） }  
+）}  
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+1）静态方法访问非静态内类： 
+                    方法为： 
+      Outer myouter=new Outer();／／这里的myouter是创建的外部类的对象。 
+      Outer.Inner myinner=myouter.new Inner();／／myinner是内类的对象。 
+      然后再myinner.showName();／／showName()是外类中的非静态方法。 
+2）非静态方法访问非静态内类 
+                    直接创建该内部类的对象：new Inner().showName(); 
+3）静态方法访问静态内类： 
+                    也是直接创建该内部类的对象，即Inner myinner = new Inner()，或
+Outer.Inner myinner = new Outer.Inner()也行得通哦。 
+．  
+ 
+ 
+public class Shape{private Color color;}  
+ 
+class Container implements Component{  
+  private Component[] children;  
+   }  
+ 
+  public class Animal{private Species species;}    
+ 
+
+意思为是什么：定义了一个超类和一个子类之间的一种直接关系:子类是超类的一种。
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+ 
+ 
+ 
+ 
+ 
+ 
+事例) Inner class inside Outer?  
+ 
+ 
+ 
+
+． 
+ 
+private float x=1.0f;  
+private float getVar(){return x;}  
+  }  
+ 
+private float x=2.0f;  
+//insert code  
+}  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+override的问题，参数列表和返回值以及方法名(好像是费话)必须精确匹配,访问控制要
+,如果抛出异常,那么必须异常本身或其子集或什么都不抛.  
+．  
+ 
+private int x;  
+private int y;  
+public void setX(int i){ x=i;}  
+public void setY(int i){y=i;}  
+public Synchronized void setXY(int i){  
+  setX(i);  
+  setY(i);  
+}  
+public Synchronized boolean check(){  
+     return x!=y;    
+  }  
+  }  
+Under which conditions will check() return true when called from a different class?  
+A.check() can never return true.  
+B.check() can return true when setXY is callled by multiple threads.  
+C.check() can return true when multiple threads call setX and setY separately.  
+D.check() can only return true if SychTest is changed allow x and y to be set separately.  
+ 
+ 
+． 
+
+   public class SyncTest ( 
+   private int x; 
+   private int y; 
+   private synchronized void setX (int i) (x=1;) 
+   private synchronized void setY (int i) (y=1;) 
+   public void setXY(int 1)(set X(i); setY(i);) 
+   public synchronized Boolean check() (return x !=y;) 
+   ) 
+ 
+ 
+   Check() can never return true 
+   Check() can return true when setXY is called by multiple threads 
+   Check() can return true when multiple threads call setX and setY separately.  
+   Check() can only return true if SyncTest is changed to allow x and y to be set separately.  
+ 
+ 
+． 
+
+   public class SyncTest { 
+   private int x; 
+   private int y; 
+   public synchronized void setX (int i) (x=1;) 
+   public synchronized void setY (int i) (y=1;) 
+   public synchronized void setXY(int 1)(set X(i); setY(i);) 
+   public synchronized Boolean check() (return x !=y;) 
+   ) 
+
+
+
+
+
+ 
+
+A。 
+．  
+ 
+ 
+ 
+ 
+  X that =new X();  
+ 
+ 
+ }  
+ 
+ 
+     x++;  
+     y++;  
+ 
+   }  
+  }  
+   
+what is the result?  
+
+
+  
+ 
+
+
+ 
+
+
+ 
+ 
+
+当两个线程同名时，输出x=1,y=1……，但只一次，而当两个线程不同名时，
+1会执行直到结束，然后线程2才会开始执行。 
+．  
+
+   public class X implements Runnable(  
+   private int x;  
+   private int y;  
+    
+   public static void main(String[]args)  
+   X that = new X();  
+   (new Thread(that)).start();  
+   (new Thread(that)).start();  
+   )  
+ 
+ 
+ 
+ 
+ 
++ y);  
+ 
+ 
+   
+ 
+
+   Errors at lines 7 and 8 cause compilation to fail. 
+   The program prints pairs of values for x and y that might not always be the same on the 
+ 
+   The program prints pairs of values for x and y that are always the same on the same line 
+example, “x=1, y=1”. In addition, each value appears twice (for example, “x=1, y=1” 
+ 
+   The program prints pairs of values for x and y that are always the same on the same line 
+
+ 
+ 
+
+
+x=1,y=1后现可以是任何东西，也可能是另一个线
+x=1,y=1。 
+． 
+ 
+ 
+ 
+try{  
+    Thread.sleep(5000);  
+     i=10;  
+    }catch(InterruptException e){}  
+    }  
+    }  
+public static void main(String[] args){  
+   try{  
+      A a=new A();  
+      Thread t=new Thread(a);  
+      t.start();  
+ 
+   int j=a.i;  
+ 
+   }catch(Exception e){}  
+   }  
+   }  
+ 
+   
+   
+   
+   
+ 
+   a.notify();  
+.t.interrupt();  
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+
+
+
+
+
+
+
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+public static void main(String[] args){  
+X x=new X();  
+x.pack();  
+x.setVisible(true);}  
+public X(){  
+  setLayout(new GridLayout(2,2));  
+  Panel p1=new Panel();  
+add(p1);  
+ 
+ 
+ 
+ 
+ 
+p2.add(b2);  
+ 
+p2.add(b3);  
+ 
+add(b4);  
+}  
+}  
+ 
+    
+   
+ 
+ 
+ 
+ 
+ 
+
+． 
+ 
+   public static void main(String[] args){  
+    String foo="ABCDE";  
+    foo.substring(3);  
+    foo.concat("XYZ");  
+   }  
+  }  
+ 
+ 
+
+String的不变性，虽然又是substring又是concat的，但都只是创建了一个
+foo一直都没有被改变，也不可能被改变。 
+．Which method is an appropriate way to determine the cosine of 42 degrees? 
+
+
+
+
+
+ 
+
+是把一个角度转换成一个弧度，cos方法的参数必须是以弧度表示的。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+public static void main(String[] args){  
+StringBuffer a=new StringBuffer("A");  
+StringBuffer b=new StringBuffer("B");  
+operate(a,b);  
+System.out.println(a+","+b);  
+}  
+public static void operate(StringBuffer x, StringBuffer y){  
+x.append(y);  
+y=x;  
+}  
+}  
+what is the output?  
+ 
+有些不理解。我只能认为y=x这名语句没有改变b。 
+． Given: 
+
+  public static void main (String [] args) { 
+     StringBuffer a = new StringBuffer (“A”); 
+     StringBuffer b = new StringBuffer (“B”); 
+    operate (a,b); 
+    system.out.printIn{a + “,” +b}; 
+
+
+          y.append （x）; 
+          y = x; 
+    ) 
+
+ 
+
+ 
+ 
+e compiles and prints “AB, B”.  
+ 
+ 
+ 
+ 
+   
+ 
+ 
+2) public static void main(String[] args){  
+3) class Foo{  
+4)       public int i=3;  
+             }  
+6)              Object o=(Object)new Foo();  
+7)              Foo foo=(Foo)O;  
+8)                     System.out.println(foo.i);  
+9) }  
+10) }  
+ 
+ 
+ 
+ 
+ 
+
+static类
+ 
+． 
+ 
+          public static void main(String[] args){  
+                         int i=0,j=5;  
+ 
+                                             for(;;--j)  
+                                                   if(i>j)break tp;  
+                                            }  
+                   System.out.println("i="+i+",j="+j);  
+}  
+}  
+ 
+   B. i=0,j=-1 C.i=1,j=4    D.i=0,j=4    
+ 
+ 
+退出了最外层的for循环，程序接着从System开始执行。 
+．  
+
+   public class ForBar { 
+  { 
+   int i = 0, j = 5; 
+   tp: for (;;) { 
+   i ++; 
+   for(;;) 
+   if(i > --j) break tp; 
+   } 
+   system.out.printIn(“i = ” + i + “, j = “+ j); 
+
+
+ 
+
+ 
+ 
+program runs and prints “i=3, j=4” 
+ 
+ 
+
+ 
+
+i就变成了1，第七行里j就一直往下减吧，然后退出最外层的for 
+ 
+． 
+public class Foo{  
+  public static void main(String[] args){  
+  try{System.exit(0);}  
+  finally{System.out.println("Finally");}  
+}  
+}  
+what is the result?  
+A.print out nothing  
+B.print out "Finally" 
+ 
+
+可以强行终止JVM，可见优先级最高啦，有了它，finally就玩完了。Systtem.exit()
+0，可以是任何整数和字符。 
+． 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+，F 
+可以抛出各种异常，但Event和Object算哪门子的异常呀？ 
+． 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  B.255 C.127 D.compile fail E.compile succeeded but run error  
+ 
+？？？？java里怎么可以这样子定义变量哩？？？ 
+． 
+ 
+    class TestException extends Exception{}  
+   public void runTest() throws TestException{}  
+    public void test() /* point x */ {  
+      runTest();  
+    }  
+}  
+At point x, which code can be add on to make the code compile?  
+
+
+
+
+
+ 
+ 
+我觉得没有try就不能有catch，所以B,D错，而C里边的RuntimeException
+Exception没关系，所以错，就只有A啦。 
+．  
+ 
+ 
+if(bar[0]){  
+   foo="green";  
+}  
+ 
+A."" B.null C.blue   D.green  
+ 
+
+这个数组的默认值是flase，所以if不改变foo。不过我认为就算是改变了foo，foo也还
+blue. 
+
+public class X{  
+public static void main(String args[]){  
+Object o1=new Object();  
+Object o2=o1;  
+if(o1.equals(o2)){  
+  System.out.prinln("Equal");  
+   }  
+   }  
+   }  
+what is result?  
+ 
+
+用于检测对象的值，即检测对象所引用的内部数据的值。只能用于引用类型。String
+String对象在代表相同字符串时相等。equals()返回真。Boolean对象在值相同时相等。
+返回真。但如果比较的两个对象的类型不相同，哪怕是值相同，也返回假。 
+ 
+．  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+乘2再异或2=4, 
+？？？？ 
+Answer: c,d 
+ 
+ 
+ 
+． 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+的数组默认是null,还要注意，null和空字符是两个东东。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+static void leftshift(int i, int j){  
+   i<<=j;  
+  }  
+public static void main(String args[]){  
+   int i=4, j=2;  
+  leftshift(i,j);  
+System.out.println(i);  
+  }  
+  }  
+what is the result?  
+
+
+
+
+
+ 
+
+！也就是说传递的是值的拷贝，所以原本的值是不变的！ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+private static int a;  
+public static void main(String[] args){  
+  modify(a);  
+  System.out.println(a);  
+  }  
+public static void modify(int a){  
+   a++;  
+  }  
+  }  
+what is the result?  
+ 
+
+这里的a是类变量，也就是说所有实例以及方法都共用这么一个宝贝东东，
+那相对于其它的实例方法也就都已经个改了。所以
+a++,也就是1，但为什么是0呢？原因就在于modify中定义的局部变量也叫a,在方
+a啦，别大意了呀。哈哈。这道题和下一道题我看了足有十分钟，
+~~~~~~~~~~~~ 
+． 
+
+2.   private static int j=0; 
+3. 
+4.   public static boolean methodB(int k) { 
+5.     j+=k 
+6.     return true;  
+7.   } 
+8. 
+9.  public static void methodA(int I) { 
+10.     boolean b; 
+11.     b=i>10&methodB(1); 
+12.     b=i>10&&methodB(2); 
+13.   } 
+14. 
+15.   public static void main(String args[]) { 
+16.     methodA(0); 
+17. 
+18.   } 
+19.} 
+
+A. 0      
+B. 1 
+C. 2 
+D. 3  
+E. The code will not compile. 
+ 
+ Answer : B 
+ 
+．  
+ 
+public String toString(){          
+return "4";  
+}  
+}  
+ 
+public String toString(){  
+   return super.toString()+"3";  
+  }  
+  }  
+public class Test{  
+   public static void main(String[] args){  
+    B b=new B();  
+System.out.println(b.toString());  
+}  
+}  
+what is the result?  
+ 
+43对象b的B类的实例，理所应当调用B类的方法，B类方法再调用超类A中的
+ 
+． 
+class A implements Runnable{  
+public int i=1;  
+public void run(){  
+this.i=10;  
+}  
+}  
+public class Test{  
+public static void main(String[] args){  
+  A a=new A();  
+11) new Thread(a).start();  
+     int j=a.i;  
+13)  
+}  
+}  
+what is the value of j at line 13?  
+A. 1  
+B. 10  
+C. the value of j cannot be determined  
+D. An error at line 11 cause compilation to fail  
+ 
+
+11行线程开始时（runnable状态），什么时候运行（running状态）是不确定的，所以说j
+ 
+． 
+ 
+   public static void main(String[] args){  
+      final StringBuffer s1=new StirngBuffer();  
+      final StringBuffer s2=new StirngBuffer();                
+      new Thread(){  
+          public void run(){  
+             Synchronized(s1){  
+                s1.append("A");  
+                Synchronized(s2){  
+                   s2.append("B");  
+                   System.out.print(s1);  
+                   System.out.print(s2);  
+                }  
+             }  
+          }  
+     }.start();  
+     new Thread(){  
+         public void run(){  
+            Synchronized(s2){  
+               s2.append("C");  
+               Synchronized(s1){  
+                  s1.append("D");  
+                  System.out.print(s2);  
+                  System.out.print(s1);  
+               }  
+           }  
+        }  
+      }.start();            
+   }  
+}  
+what is the result?  
+A.the result depends on different system and different thread model  
+B.the result cannot be determined  
+ 
+
+对线程的执行情况也就不同，所以这道题道底会输出成什么样是不可确定的，
+ 
+． 
+public class Test{  
+public static void main(String[] args){  
+String foo="blue";  
+4）String bar=foo;  
+5）foo="green";  
+6）System.out.println(bar);  
+}  
+}  
+what is the result?  
+
+
+ 
+ 
+ 
+ 
+
+String的不变性使得4，5，6行都创建了一个新的字符串。 
+ 
+．  
+ 
+ 
+ 
+ 
+ 
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+ 
+ 
+Even if a class Super does not implement any interfaces, it is still possible to define an 
+ 
+Even if a class Super does not implement any interfaces, it is still possible to define an 
+ 
+ 
+
+． 
+ 
+   public int getNumber(int a){  
+     return a+1;  
+}  
+ 
+  class B extends A{  
+ 
+    return a+2;  
+   }  
+   public static void main(String[] args){  
+   B b=new B();  
+ 
+   }  
+   }        
+what is the result?  
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+．  
+
+ 
+ 
+    return a + 1;  
+ 
+ 
+   
+ 
+ 
+
+ 
+   
+ 
+ 
+ 
+   }  
+   
+ 
+
+   Compilation succeeds and 1 is printed. 
+   Compilation succeeds and 2 is printed. 
+   An error at line 8 causes compilation to fail. 
+   An error at line 13 causes compilation to fail. 
+   An error at line 14 causes compilation to fail. 
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+import java.awt.*;  
+public class X extends Frame{  
+public static void main(String[] args){  
+  X x=new X();  
+  x.pack();  
+  x.setVisible(true);  
+  }  
+public X(){  
+setLayout(new BorderLayout());  
+Panel p=new Panel();  
+add(p,BorderLayout.NORTH);  
+Button b=new Button("North");  
+p.add(b);  
+Button b1=new Button("South");  
+add(b1,BorderLayout.SOUTH);  
+}  
+  which two are true?  
+A. The button labeled "North" and "South" will have the same width  
+B. The button labeled "North" and "South" will have the same height  
+C. The height of the button labeled "North" can vary if the Frame is resized  
+D. The height of the button labeled "South" can vary if the Frame is resized  
+E. The width of the button labeled "North" is constant even if the Frame is resized  
+F. The width of the button labeled "South" is constant even if the Frame is resized  
+ 
+
+．which two interfaces provide the capability to store objects using a key-value pair?  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+． which two declaretions prevent the overriding of a method?  
+ 
+ 
+ 
+ 
+ 
+ 
+
+，D正确，被声明为final的方法不可以被override，B错在顺序问题很重要，final不能写
+void后面，C严格的说也不可以被override，但可以被隐匿。类似override。所以也是错
+E错在：final是防止override的，而abstract必须要被override，两个关键字不能连用。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+   public double methoda(){return d1;}  
+ 
+    static double methoda(){return d1;}  
+ 
+   public double methoda(){return d1;}  
+ 
+    static double methoda(){return d1;}  
+ 
+  public abstract double methoda();  
+ 
+
+，B，D错在，静态内类相当于一个静态方法，所以在静态方法中不能访问非静态成员。 
+ 
+． 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+想让一个类能够引用另一个类的成员，而要用最大的局限
+要怎么办，题意弄清了之后，这道题也没
+ 
+
+ 
+． 
+which two statements declare an array capable of 10 int?  
+ 
+ 
+ 
+ 
+ 
+ 
+
+int的，所以CDE都不对。 
+ 
+． 
+ 
+public static void main(String[] args){  
+ 
+}  
+ 
+  int j=1;  
+ 
+case 1: j++;  
+case 2: j++;  
+case 3: j++;  
+case 4: j++;  
+case 5: j++;  
+default: j++;  
+}  
+return j+x;  
+}  
+}  
+what is the output from line 3?  
+A. value=3 B. value=4 C. value=5 D. value=6 E. value=7 F. value=8  
+程序从case 4开始执行，一直到结束。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+will declare a method that is available to all members of the same package and can be 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+． 
+ 
+ 
+ 
+ 
+   SuperClass bar=foo;  
+   }  
+   }  
+ 
+ 
+ 
+    
+ 
+   
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+A. member data have no access modifiers  
+B. member data can be modified directly  
+C. the access modifier for methods is protected  
+D. the access modifier to member data is private  
+E. methods provide for access and modification of data  
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+public class X implements Runnable{  
+public static void main(String[] args){  
+   //insert code  
+  }  
+public void run(){  
+    int x=0,y=0;  
+    for(;;){  
+     x++;  
+     Y++;  
+  System.out.println("x="+x+",y="+y);  
+     }  
+    }  
+}      
+
+
+ 
+  x.run();  
+ 
+  new Thread(x).run();  
+ 
+  new Thread(x).start();  
+ 
+ 
+ 
+
+ 
+ 
+A. String name=File.getParentName("file.txt");  
+B. String name=(new File("file.txt")).getParent();  
+C. String name=(new File("file.txt")).getParentName();  
+D. String name=(new File("file.txt")).getParentFile();  
+E. Diretory dir=(new File("file.txt")).getParentDir();  
+ 
+ 
+
+． 
+ 
+try{  
+  File f=new File("file.txt");  
+  OutputStream out=new FileOutputStream(f);  
+  }catch (IOException e){}  
+A. the code does not compile  
+B. the code runs and no change is made to the file  
+C. the code runs and sets the length of the file to 0  
+D. An exception is thrown because the file is not closed  
+E. the code runs and deletes the file from the file system  
+ 
+ 
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+
+
+ 
+
+
+  {} 
+
+   The code does not compile. 
+   The code runs and no change is made to the file.  
+   The code runs and sets the length of the file to 0.  
+   An exception is thrown because the file is not closed.  
+   The code runs and deletes the file from the file system.  
+ 
+ 
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+class Super{  
+public int i=0;  
+public Super(String text){  
+i=1;  
+}  
+}  
+public class Sub extends Super{  
+   public Sub(String text){  
+    i=2;  
+   }  
+public static void main(String args[]){  
+  Sub sub=new Sub("Hello");  
+  System.out.println(sub.i);  
+  }  
+  }  
+what is the result?      
+  A. compile will fail  
+  B. compile success and print "0"  
+  C. compile success and print "1"  
+  D. compile success and print "2"  
+ 
+  a 
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+import java.io.IOException;  
+  public class ExceptionTest{  
+  public static void main(String args[]){  
+   try{  
+       methodA();  
+      }catch(IOException e){  
+      System.out.println("Caught Exception");  
+      }  
+      }  
+   public void methodA(){  
+    throw new IOException();  
+    }  
+    }  
+   what is the result?  
+   A.The code will not compile  
+   B.The output is Caught Exception  
+   C.The output is Caught IOException  
+   D.The program executes normally without printing a message  
+ 
+
+methodA是非静态方法，不能出现在main中，其次，就算methodA是静态方法，
+是可检测异常，必须要被catch捕获或是被throws声明，但程序中没声明(throws)，
+try语句体永远也不可能抛出IOException这个异常，而catch也就谈不到捕获它了，所
+ 
+methodA方法的定义语句后面加上throws IOException就对了。 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+
+
+
+ 
+  A.GridLayout  
+  B.CardLayout  
+  C.FlowLayout  
+  D.BorderLayout  
+  E.GridbagLayout  
+ 
+
+ 
+．  
+need to store elements in a collection that guarantees that no duplicates are stored and all 
+ 
+A. java.uil.Map  
+B.java.util.Set  
+C.java.util.List  
+D.java.util.SortedSet  
+E.java.util.SortedMap  
+F.java.util.Collection  
+ 
+
+为最佳答案。 
+． 
+which two cannot directly cause a thread to stop executing?  
+ 
+ 
+ 
+   
+ 
+ 
+
+cannot这个词呀，不要大意了。 
+yield的时候，线程会停止执行。当用wait的时候，线程进行wait状态，当然stop啦，
+A，B都不对，当调用start方法启动另一个线程时，线程只是进行ready状态，并不能
+CPU马上就会给这个线程机会运行，而停止当前正在运行的线程，但也可能替换掉当
+ 
+A，B，E都会或是可能会停止当前正在运行的线程，而只有C，D这两个白痴方法不
+ 
+ 
+．Which two CANNOT directly cause a thread to stop executing? (Choose Two) 
+ 
+
+
+
+
+
+ 
+
+ 
+． 
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+． 
+
+
+ 
+
+
+
+
+
+what is the result?  
+A.An Exception is thrown  
+B.The program exits without printing anything  
+C.An error at line 1 causes complication to fail  
+D.An error at line 2 causes complication to fail  
+E."Running" is pinted and the program exits  
+ 
+
+接口中只有一个run方法，而且是public void和无参的，实现这个接口必须实现run
+run是有参的，因此这里实际上并没有实现public void run()，而创建了一个新
+Start()不会自动调用，系统提示C:第一句有错！认为run方法没有被实现。 
+ 
+． 
+ 
+   B.start()   C. begin()   D.run(Runnable r) E.execute(Thread t)  
+ 
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+
+ 
+
+ 
+a thread is blocked in the wait method of an object,and another thread executes the notify 
+
+ 
+two threads are blocked in the wait method of one object,and another thread executes the 
+method on the same object,then the thread that executed the wait call first definitely 
+ 
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+ 
+ 
+ 
+ 
+Construction of an instance of a static inner class requires an instance of the encloing outer 
+ 
+ 
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+   
+
+
+
+
+
+
+
+
+
+
+when is the float Object, created in line 3 ,collected as garbage?  
+A.just after line 5 B.just after line 6 C.just after line 7   D.never in this method  
+ 
+
+o=null，但同时oa[0]还指向o的内存区域，在第七行时，oa[0]=null时，
+o的内存区域了，所以满足了垃圾收集的条件。 
+ 
+ 
+ 
+． 
+//point X  
+ 
+ 
+ 
+ 
+}  
+}  
+ 
+        B.include java.io.PrintWriter  
+  D.include java.io.OutputStreamWriter  
+ 
+ 
+
+程序开头要导入，所以选A，在程序中，OutputStreamWreter使用了
+这种形式，所以程序开头不用导入。include？？？？这东东好像
+java半点关系都没有耶。 
+ 
+． 
+Given: 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+. 
+ 
+． 
+which prevent create a subclass of outer class?  
+A.static class FooBar{}  
+B.pivate class Foobar{}  
+C.abstract class FooBar{}  
+D.final public class FooBar{}  
+E.final abstract class FooBar{}  
+ 
+
+防止继承！不可以和abstract连用！！！ 
+． 
+）abstract class AbstractIt{  
+2) abstract float getFloat();  
+3) }  
+4) public class AbstractTest extends AbstractIt{  
+5) private float f1=1.0f;  
+6) private float getFloat(){return f1;}  
+7) }  
+what is the result?  
+ 
+
+private这个东东上。 
+ 
+． 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+ 
+
+围数必须相同,不能把小的给大的,也不能把大的给小的.
+这道题的关键是byte[] array1,array2[]，嘿嘿，看懂了吗？它实际是
+byte[]array1和byte[]array[]两个耶，写个通俗的形式就是byte array1[]和byte array2[][]，
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+w FileOutputStream (“file.txt”); 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+． 
+which constructs a DataOutputStream ?  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+．  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+． 
+ 
+2) public abstract void methodA();  
+3) public abstract void methodB()  
+4) { System.out.println("Hello");  
+5) }  
+6) }  
+which three changes(made independently) allow the code to compile?  
+A.add a method body to methodA.  
+B.replace line 4-5 with a ";".  
+C.remove the abstract qualifier from the declaration of Test.  
+D.remove the abstract qualifier from the declaration of methodB.  
+E.remove the abstract qualifier from the declaration of methodA.  
+F.remove methodB in its entirety and change class to interface in line 1.  
+ 
+
+methodB是一个抽象方法，不能够提供具体的实现，但提供了具体的实现， 
+methodB来想呗。 
+methodB方法中的实现去掉，换成分号，当然可以啦。所以B正确。 
+的意思是把abstract去掉，这样mehtodB就成了一个普通的方法，虽然类Test是抽象的，
+ 
+的意思是整个把methodB删掉，哈哈，这样最保险了。但它还说把类改成一个接口，我认
+ 
+，C，E都没有解决关键的问题，当然也就不对了。 
+ 
+． 
+ 
+ 
+public class ClassOne{  
+private char var='a';  
+char getVar(){ return var;}  
+   }  
+ 
+ 
+package com.ab.pkg2;  
+import com.ab.pkg1.ClassOne;  
+public class ClassTest extends ClassOne{  
+  public static void main(String args[]){  
+   char a=new ClassOne().getVar();  
+   char b=new ClassTest().getVar();  
+}  
+}  
+ 
+
+
+
+
+ 
+
+ 
+．  
+ 
+do{  
+   if(i>j)continue;  
+   j--;  
+   }while(++i<6);  
+what are the vale of i and j?  
+A.i=6,j=5  
+B.i=5,j=5  
+C.i=6,j=4  
+D.i=5,j=6  
+E.i=6,j=6  
+ 
+
+i=5时j=多少，因为i=6或是i>6时循环。就
+i=1时，j=10，但当while重新判断时，j--就被执行，所以第一次循环结束而第
+i=1，j=9，这样当i=5时，j=5，这里进行while判断，因为是++i，所以i
+1，i变成了6，所以选A正确。 
+． 
+）public class Foo{  
+2）public static void main(String[] args){  
+3）int i=1;  
+4） int j=i++;  
+5） if((i>++j)&&(i++==j)){  
+6）     i+=j;  
+      }  
+      }  
+     }  
+what is the final value i and j?  
+ 
+
+i的值是先赋给了j然后再进行++计算的，所以此时i=2,j=1，第五行判断，++j
+1，然后再使用的，所以j+1=2后，再和i比较，当然结果是flase，又因为是&&，
+i++==j不执行，所以i=2,j=2. 
+． 
+which two are equivalent?  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+就是除以2的n次方，n是要移的位数。左移就是乘 
+； 
+
+
+． 
+ 
+public static void main(String[] args){  
+  byte b=127;  
+ 
+ 
+}  
+}  
+
+
+ 
+
+
+ 
+
+的范围可是-128到+127耶！看清楚了。 
+ 
+．  
+ 
+ 
+is a non-abstract,non-final class without a zero argument constructer,but with a 
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+which two creat an InputStream and open the file"file.txt" for reading?  
+der(“file.txt”); 
+ 
+ 
+ 
+);  
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+ 
+ 
+ 
+putStream(new InputStream(“in.txt”)); 
+ 
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+
+ 
+
+
+
+
+
+   
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+
+
+
+
+
+
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+ 
+ 
+olean exists=(new File(“prefs”)).isDir(); 
+ 
+ 
+
+
+Directory d = new Directory(“prefs”); 
+
+
+  exists = false; 
+
+ 
+
+． 
+ 
+A.int foo=(int)Math.max(bar);  
+B.int foo=(int)Math.min(bar);  
+C.int foo=(int)Math.abs(bar);  
+D.int foo=(int)Math.ceil(bar);  
+E.int foo=(int)Math.floor(bar);  
+F.int foo=(int)Math.round(bar);  
+ 
+ 
+  e 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+
+
+
+
+
+
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+public class Test extends Frame{  
+public Test(){  
+   add(new Label("Hello"));  
+   add(new TextField("Hello"));  
+   add(new Button("Hello"));  
+   pack();  
+ show();}  
+public static void main(String[] args){  
+new Test();  
+}  
+}    
+ 
+ 
+
+
+
+
+
+ 
+
+ 
+ 
+覆盖,框架出现,只包含按钮  
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+which is true?  
+
+
+
+
+
+ 
+
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+ 
+   A.An anonymous class can be declared as static.  
+   B.A static inner class cannot be a static member of the outer class.  
+   C.A static inner class does require an instance of the enclosing class.  
+   D.Instance member of a static inner class can be referened using the class name of the static 
+ 
+ 
+
+ 
+． 
+ 
+   public double radius;  
+  public double diameter;  
+  public void setRadius(double radious){  
+6) this.radius=radius;  
+7) this.diameter=radius*2;}  
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+． 
+ 
+ 
+public static void main(String[] args){  
+float f1[],f2[];  
+f1=new float[10];  
+f2=f1;  
+System.out.println("f2[0]="+f2[0]);  
+}  
+}  
+what is the result?  
+
+
+
+
+ 
+ 
+
+ 
+． 
+ 
+public static void main(String[] args){  
+  int[] a=new int[1];  
+4) modify(a);  
+  System.out.println(a[0]);  
+  }  
+  public static void modify(int[] a){  
+9) a[0]++;}  
+   }  
+what is the result?  
+A.The program runs and prints "0";  
+B.The program runs and prints "1";  
+C.The program runs but aborts with an exception;  
+D.An error "possible undefined variable" at line 4 cause compilation to fail;  
+E.An error "possible undefined variable" at line 9 cause compilation to fail;  
+ 
+
+ 
+ 
+． 
+
+
+
+
+
+   (i ==1) 
+   (i == d) 
+   (d == 1) 
+   (i.equals (d)) 
+   (d.equals (i)) 
+   (i.equals (42)) 
+ 
+ 
+
+两边的类型必须一样，所以A，B，C都不对， 
+（）”被类型包装类覆盖，当两边类型相同时，对象所代表的基本类型的值相等，则
+D,E也不对， 
+． 
+
+
+    public void setVar (int a, int b, float c) { 
+    } 
+
+ 
+ar method? (Choose Two)  
+
+
+
+
+ar (int a, int b, float c) (return c;) 
+ 
+
+overload，唉呀我不说了，自己看吧，在前边我已经说过n次了。不过有一点应该提醒
+overload没有访问控制限制。 
+． 
+
+
+   Private float x = 1.0f ; 
+    protected float getVar ( ) ( return x;) 
+
+
+      private float x = 2.0f; 
+      //insert code here 
+
+ 
+ 
+
+
+
+
+
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+        Private Component[ ] children; 
+ 
+ 
+
+是继承的关系，has a 是调用的关系。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+
+ 
+
+   public static class Inner ( 
+   ) 
+
+ 
+
+ 
+
+
+From within the package bar, an instance of the inner class can be constructed with “new 
+ 
+ 
+ 
+
+．     
+Given: 
+  int index = 1; 
+  boolean[] test = new boolean[3]; 
+
+ 
+
+
+
+
+
+
+
+ 
+
+数组的默认值是false 
+． 
+Given: 
+
+   public static void main(String[]args){ 
+
+                String foo = args [2]; 
+                 String foo = args [3]; 
+      
+ 
+
+ 
+ 
+
+
+
+“” 
+
+ 
+ 
+ 
+
+. the program throws an exception 
+ 
+
+,foo重复定义. 
+． 
+
+ 
+
+
+
+
+
+ 
+
+abstract啦。 
+． 
+
+
+ 
+
+
+
+
+
+ 
+
+． 
+Given: 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+的方法不能更加私有化。 
+． 
+
+ public class test(  
+ public int aMethod(){ 
+ 
+ i++;  
+ return I;  
+ )  
+ public static void main (String args[]){  
+ test test = new test();  
+ test.aMethod();  
+ 
+ 
+
+     
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+3行，静态变量属于类,不能在方法中定义. 
+ 
+ 
+
+ 
+
+
+
+
+
+ 
+
+．Which is a method of the MouseMotionListener interface? 
+
+
+
+
+
+
+MouseMotionListener有多个构造器。但全都是public void的，而且需
+MouseEvent类型的参数。 
+ 
+ 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+Click the exhibit button: 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+   
+ 
+ 
+on (“One”);  
+ 
+   
+ 
+ 
+ 
+ 
+   
+ 
+ 
+   
+ 
+ 
+    )  
+ 
+ 
+ 
+
+
+ is resized. 
+ 
+ 
+
+~~~~~~~~~，唉，凑合啦，没办法 
+ 
+     one                   two  
+      
+     three     
+    four  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+． 
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+ 
+
+
+ 
+
+的运算结果不是boolean类型的,所以错. 
+． 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+switch 
+． 
+
+
+
+ 
+
+ 
+ 
+
+
+
+
+
+ 
+
+switch，它就来了，这里的i可以是char或是int byte short 因为当进入switch的时
+,JVM会把i转换成int,所以其它的类型都会出现精度损失的情况.所以如果把上题中的
+语句改成(int)i,这样就什么类型都可以啦. 
+
+ 
+
+
+ 
+     
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+  {  
+  public void run() {  
+   synchronized(s1) {  
+        s2.append(“A”);  
+         synchronized(s2) {  
+  s2.append(“B”);  
+    System.out.print(s1);  
+      System.out.print(s2);  
+      }  
+  }  
+  }    
+ 
+ 
+  public void run() {  
+    synchronized(s2) {  
+      s2.append(“C”);  
+      synchronized(s1) {  
+        s1.append(“D”);  
+        System.out.print(s2);  
+        System.out.print(s1);  
+       }  
+      }  
+     }  
+   }.start();  
+  }  
+ 
+ 
+ 
+“ABBCAD” 
+ 
+ 
+
+ 
+ 
+
+． 
+Given: 
+ 
+
+ 
+ 
+ 
+ 
+ 
+  base 
+．  
+
+ 
+
+ 
+ 
+
+
+ 
+
+String的不变性，在前三条语句执行后，两题中的foo都没变，但
+137多的那条语句，137的第4条语句不但创
+foo。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+
+
+
+
+
+
+
+
+If two components are placed in the same column of a grid bag layout, and one component 
+ 
+ 
+
+．  
+
+
+
+
+
+  { 
+
+
+
+ 
+   
+
+
+
+
+
+
+ 
+
+final呀。还有，注意这道
+overrid不是overload。 
+． 
+
+ 
+ 
+  return 1;  
+  }  
+ 
+   
+ 
+ 
+ 
+
+   
+ 
+   B b = new B ();  
+     System.out.printIn(b.getNumber())     
+  }  
+ 
+ 
+
+
+
+
+
+
+ 
+
+overload，也不是override，那就错的呗。 
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+Which two statements are true? (Choose Two)  
+
+
+
+
+
+ 
+
+． You want to limit access to a method of a public class to members of the same class. Which 
+
+ 
+
+
+
+
+
+ 
+
+ 
+． 
+Which two statements are true regarding the creation of a default constructor? (Choose Two) 
+
+
+
+ 
+When a class has only constructors with parameters, the compiler does not create a default 
+
+ 
+
+．@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`    
+ 
+
+
+
+
+ 
+creates a default constructor only when there are no other constructors for the 
+
+ 
+
+． 
+Click the exhibit button: 
+ 
+  public int getLength() {return 4;}  
+ 
+   
+ 
+   public long getLength() {return 5;}  
+   
+ 
+         super sooper = new Super ();  
+ 
+ 
+   sooper.getLength()+ “,” + sub.getLength()   };  
+ 
+      
+ 
+
+
+
+
+
+
+ 
+
+getLength方法既不是override也不是overload 
+
+Which is a valid identifier? 
+ 
+
+
+
+
+ 
+
+
+
+ 
+   
+ 
+   
+ 
+ 
+ 
+ 
+   }  
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+  }  
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+public或什么都不加。 
+． 
+
+
+
+  String foo = args[1]; 
+  String bar = args[2]; 
+  String baz = args[3]; 
+ + baz); 
+  } 
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+． 
+Given: 
+
+
+
+ 
+
+
+
+
+
+
+
+.transient int k = 4; 
+
+ 
+
+． 
+ 
+ 
+? ,; 
+ 
+ 
+ucafe?; 
+u10100?; 
+.char ch = (char) true; 
+ 
+
+型只能被赋一个字符或数字或一些符号，而且要用单引号，注意，它是字符，而不是字
+ 
+ 
+． 
+
+ 
+ 
+ 
+ 
+  {  
+ 
+      }  
+     }  
+    }    
+ 
+
+
+ 
+
+
+ 
+
+equals，即使两边对象的内容完全相同，但对象的类型不同时，也返回flase 
+ 
+ 
+
+ 
+  {  
+ 
+ 
+ 
+ 
+   
+ 
+ 
+   }  
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  { 
+
+
+ 
+   } 
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+Click the exhibit button: 
+ 
+   
+ 
+ 
+ 
+   
+ 
+ 
+   
+ 
+ 
+   
+ 
+ 
+ 
+    
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+Which statement is true for the class java.util.ArrayList? 
+ 
+
+不可变的) 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+   }  
+   
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+  public void main (String [] args)   { 
+    system.out.printIn(“Hello World.”); 
+   } 
+
+ 
+
+
+
+ 
+
+ 
+
+main方法错误定义时,编译都能通过,但运行时会出错. 
+
+Which type of event indicates a key pressed on a java.awt.Component? 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+of a border layout is the proper place to locate a menuBar component in a 
+
+
+
+
+
+ 
+
+ 
+ 
+
+
+
+  class Foo { 
+    public int i = 3; 
+   } 
+   Object o = (Object) new Foo(); 
+   Foo foo = (Foo)o; 
+   System.out.printIn(foo. i); 
+   } 
+
+ 
+
+
+ 
+ 
+
+ 
+
+． 
+ 
+ 
+
+
+; 
+
+
+ 
+
+ 
+． 
+1. public class X { 
+2.   public static void main(String [] args) { 
+3.     Object o1= new Object(); 
+4.     Object o2= o1; 
+5.     if(o1 .equals(o2)) { 
+6.       System.out.println("Equal"); 
+7.     } 
+8.   } 
+9. } 
+
+A. The program runs and prints nothing. 
+B. The program runs and prints "Equal". 
+C. An error at line 5 causes compilation to fail. 
+D. The program runs but aborts with an exception. 
+ 
+Answer :B 
+ 
+ - 
+  
+［iPhone开发之控件的使用］UILabel的各种属性与方法的使用ssh搭建网
+3Qt 中文乱码解决Win32 DLL相关操作Need more time to read? 
+没时间读书？远OCM考试 资源管理器部分 Schedules调度Programs执
+Jobs关于XML中的国际化问题JS实现文本框只能输入两位小数的数字,不显示输入的
+ . 
+ 

@@ -1,0 +1,15 @@
+Here is the feedback today.
+
+1. #79 Change the JWS (JWT) token generation by using same configurable key for all user.
+Status: doing
+Comment: I think I should change the code of 'com.rv.arch.utils.jwt.impl.jjwt.JjwtJwtImpl' by inserting the key into 
+the constructor method directly.
+
+2. # 78 bcrypt 2y and NOT 2a must be used for password encryption
+Status: doing
+Comment: I think I am using the 2y verison.
+And I have seen the example of activemq-plugin-auth.
+The interface has two instances.
+The example uses the second instance and it just return the
+
+
