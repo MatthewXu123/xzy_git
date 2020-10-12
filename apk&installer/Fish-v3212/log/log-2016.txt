@@ -1,53 +1,206 @@
 
-2020-08-21 09:43:57:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\Fish.exe-3.2.12-0314
-09:43:57:start with admin privilege : 0
-09:43:57:LoadUrlFile can't open url file. cUrlFile:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kini\tkbatch.ini
-09:44:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:02:ToAddBatchTasks nSize = 0
-09:44:02:AddBatchTasks batch task is done. nSize is zero
-09:44:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:08:OnRClickListMenu nID:38301
-09:44:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:44:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:45:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
-09:46:15:end
+2020-09-22 15:48:14:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\Fish.exe-3.2.12-0314
+15:48:14:start with admin privilege : 0
+15:48:15:LoadUrlFile can't open url file. cUrlFile:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kini\tkbatch.ini
+15:48:18:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:19:ToAddBatchTasks nSize = 0
+15:48:19:AddBatchTasks batch task is done. nSize is zero
+15:48:21:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:24:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:27:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:28:DownloadFile taskid = 6, nThreadId = 1, nIndex = 0, url = https://wenku.baidu.com/view/0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html
+15:48:28:DownloadFileCallBackWithCurl url= https://wenku.baidu.com/view/0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html, nUncompress = 0
+15:48:30:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:48:30:AddExportPDFTask. i:0, status:101,downloadstatus:2,ListItem:0,https://wenku.baidu.com/view/0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html
+15:48:30:in AddExportPDFTask. i equal size. i = 1.
+15:48:30:download finish, uTaskId = 6, status = 200, downloaded = 29383, content-length = -1
+15:48:30:status = 200, uTaskId = 6
+15:48:31:encoding is gzip. uTaskId = 6, sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html
+15:48:31:change unknown readerType to html. readerType:xreader, sUrl=https://wenku.baidu.com/view/0ac7bda02ec58bd63186bceb19e8b8f67d1cef45.html.
+15:48:31:DownloadFile taskid = 6, nThreadId = 2, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A06%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A06Z%2F3600%2Fhost%2F4c1dc06c8d0e3924b9cc8c6965360b1c023f9bd56c1b9ef618cc85529c4088e8&x-bce-range=0-16020&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4NiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6vnkmPqVhcLeL%2Fa8kfenreIwcC3NyjXeYbZ%2FFNL0rww%3D.1600764186
+15:48:31:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A06%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A06Z%2F3600%2Fhost%2F4c1dc06c8d0e3924b9cc8c6965360b1c023f9bd56c1b9ef618cc85529c4088e8&x-bce-range=0-16020&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4NiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6vnkmPqVhcLeL%2Fa8kfenreIwcC3NyjXeYbZ%2FFNL0rww%3D.1600764186, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b1CDC0EB711CFEE97CC802ECCADAABD34_json, nUncompress = 0
+15:48:33:download finish, uTaskId = 6, status = 206, downloaded = 16021, content-length = 16021
+15:48:33:status = 206, uTaskId = 6
+15:48:33:DownloadFile taskid = 6, nThreadId = 3, nIndex = 0, url = https://wenku.baidu.com/browse/getrequest?doc_id=0ac7bda02ec58bd63186bceb19e8b8f67d1cef45&pn=1&rn=50&type=html
+15:48:33:DownloadFileCallBackWithCurl url= https://wenku.baidu.com/browse/getrequest?doc_id=0ac7bda02ec58bd63186bceb19e8b8f67d1cef45&pn=1&rn=50&type=html, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b1CDC0EB711CFEE97CC802ECCADAABD34_html_1.lst, nUncompress = 0
+15:48:33:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:48:33:AddExportPDFTask. i:0, status:104,downloadstatus:2,ListItem:0,2019年最新婚内忠诚协议范本
+15:48:33:in AddExportPDFTask. i equal size. i = 1.
+15:48:34:download finish, uTaskId = 6, status = 200, downloaded = 691, content-length = -1
+15:48:34:status = 200, uTaskId = 6
+15:48:34:encoding is gzip. uTaskId = 6, sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b1CDC0EB711CFEE97CC802ECCADAABD34_html_1.lst
+15:48:34:UpdateTaskStatus. status:-1, url:https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2F2423255defd006e8a99b150fcb21c9013554b3326025f686ef6435cd34180094&x-bce-range=0-16020&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.9C9McKd%2Bd383nhmOLYZDEqVUQfszM0jf8Rr9slTqwy8%3D.1600764189, m_sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0ac7bda02ec58bd63186bceb19e8b8f67d1cef45_1.dat
+15:48:34:DownloadFile taskid = 6, nThreadId = 4, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2F2423255defd006e8a99b150fcb21c9013554b3326025f686ef6435cd34180094&x-bce-range=0-16020&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.9C9McKd%2Bd383nhmOLYZDEqVUQfszM0jf8Rr9slTqwy8%3D.1600764189
+15:48:34:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2F2423255defd006e8a99b150fcb21c9013554b3326025f686ef6435cd34180094&x-bce-range=0-16020&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.9C9McKd%2Bd383nhmOLYZDEqVUQfszM0jf8Rr9slTqwy8%3D.1600764189, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0ac7bda02ec58bd63186bceb19e8b8f67d1cef45_1.dat, nUncompress = 0
+15:48:36:download finish, uTaskId = 6, status = 206, downloaded = 16021, content-length = 16021
+15:48:36:status = 206, uTaskId = 6
+15:48:36:DownloadFile taskid = 6, nThreadId = 5, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2Ff7900a7550b2fcca13ed048e99f485732d8948980902d8e11de6389db0b88812&x-bce-range=0-259&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.MHxx7KggkSkjus4xTO%2F6EF9Rd28ptg9jYmX%2FOJ8PG3g%3D.1600764189
+15:48:36:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2Ff7900a7550b2fcca13ed048e99f485732d8948980902d8e11de6389db0b88812&x-bce-range=0-259&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.MHxx7KggkSkjus4xTO%2F6EF9Rd28ptg9jYmX%2FOJ8PG3g%3D.1600764189, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0ac7bda02ec58bd63186bceb19e8b8f67d1cef45_2.dat, nUncompress = 0
+15:48:36:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:48:36:AddExportPDFTask. i:0, status:107,downloadstatus:2,ListItem:0,2019年最新婚内忠诚协议范本
+15:48:36:in AddExportPDFTask. i equal size. i = 1.
+15:48:38:download finish, uTaskId = 6, status = 206, downloaded = 260, content-length = 260
+15:48:38:status = 206, uTaskId = 6
+15:48:38:UpdateTaskStatus. status:-5, url:https://wkbjcloudbos.bdimg.com/v1/docconvert7165//wk/0feaba1a1830f9d6d0b11964497ccce9/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A43%3A09%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A43%3A09Z%2F3600%2Fhost%2Ff7900a7550b2fcca13ed048e99f485732d8948980902d8e11de6389db0b88812&x-bce-range=0-259&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDE4OSwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.MHxx7KggkSkjus4xTO%2F6EF9Rd28ptg9jYmX%2FOJ8PG3g%3D.1600764189, m_sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0ac7bda02ec58bd63186bceb19e8b8f67d1cef45_2.dat
+15:48:38:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:48:38:AddExportPDFTask. i:0, status:-5,downloadstatus:1,ListItem:0,2019年最新婚内忠诚协议范本
+15:48:38:ExportPdfFile html, taskid = 6, nThreadId = 6, nIndex = 0, m_sPdfFileName = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kpdf\2019年最新婚内忠诚协议范本.pdf
+15:48:38:ExportPDFFromHTMLCallBack uTaskId = 6, uId = 6, uMsgId = 393222, res = 0, m_sReaderType=html, m_sPdfFileName=C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kpdf\2019年最新婚内忠诚协议范本.pdf
+15:48:38:begin to export
+15:48:43:end to export
+15:48:45:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:48:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:51:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:54:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:48:57:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:00:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:03:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:06:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:09:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:12:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:15:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:17:OnRClickListMenu nID:38301
+15:49:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:48:OnRClickListMenu nID:38301
+15:49:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:49:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:50:47:DownloadFile taskid = 7, nThreadId = 7, nIndex = 0, url = https://wenku.baidu.com/view/0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8.html
+15:50:47:DownloadFileCallBackWithCurl url= https://wenku.baidu.com/view/0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8.html, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8.html, nUncompress = 0
+15:50:48:download finish, uTaskId = 7, status = 200, downloaded = 29570, content-length = -1
+15:50:48:status = 200, uTaskId = 7
+15:50:48:encoding is gzip. uTaskId = 7, sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8.html
+15:50:48:change unknown readerType to html. readerType:xreader, sUrl=https://wenku.baidu.com/view/0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8.html.
+15:50:48:DownloadFile taskid = 7, nThreadId = 8, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=0-10089&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6hR%2FIFItQCktiIvEwxzSqYDrmRcOJevVvtal%2BuCuVpQ%3D.1600764323
+15:50:48:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=0-10089&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6hR%2FIFItQCktiIvEwxzSqYDrmRcOJevVvtal%2BuCuVpQ%3D.1600764323, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b3362A4F470206906FC052E1CFF926337_json, nUncompress = 0
+15:50:49:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:50:49:AddExportPDFTask. i:0, status:102,downloadstatus:2,ListItem:0,婚内忠诚协议
+15:50:49:in AddExportPDFTask. i equal size. i = 1.
+15:50:50:download finish, uTaskId = 7, status = 206, downloaded = 10090, content-length = 10090
+15:50:50:status = 206, uTaskId = 7
+15:50:50:OnMessageEvent task is not existed. message: 7, 13, 7, 0
+15:50:50:UpdateTaskStatus. status:-1, url:https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=0-10089&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6hR%2FIFItQCktiIvEwxzSqYDrmRcOJevVvtal%2BuCuVpQ%3D.1600764323, m_sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_1.dat
+15:50:51:DownloadFile taskid = 7, nThreadId = 9, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=0-10089&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6hR%2FIFItQCktiIvEwxzSqYDrmRcOJevVvtal%2BuCuVpQ%3D.1600764323
+15:50:51:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=0-10089&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6hR%2FIFItQCktiIvEwxzSqYDrmRcOJevVvtal%2BuCuVpQ%3D.1600764323, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_1.dat, nUncompress = 0
+15:50:52:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:50:52:AddExportPDFTask. i:0, status:107,downloadstatus:2,ListItem:0,婚内忠诚协议
+15:50:52:in AddExportPDFTask. i equal size. i = 1.
+15:50:53:download finish, uTaskId = 7, status = 206, downloaded = 10090, content-length = 10090
+15:50:53:status = 206, uTaskId = 7
+15:50:53:DownloadFile taskid = 7, nThreadId = 10, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=10090-&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.jLksEtqtdtyLTK5wezXetM12fUcnixfntiybxtUzp30%3D.1600764323
+15:50:53:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.json?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F79e668bdb62a8cb18ef33d85204bce1c75c9c78c6e72fbc89b4e27fbc989830a&x-bce-range=10090-&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.jLksEtqtdtyLTK5wezXetM12fUcnixfntiybxtUzp30%3D.1600764323, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_2.dat, nUncompress = 0
+15:50:54:download finish, uTaskId = 7, status = 206, downloaded = 10515, content-length = 10515
+15:50:54:status = 206, uTaskId = 7
+15:50:54:DownloadFile taskid = 7, nThreadId = 11, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F7ee2cde1c56a41c74bfa5a231e38a68adc0490645ba9e427ecdabfdfd45bc23e&x-bce-range=0-142&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.qe1mTbG3z8v9ddbIuUkjSDRWYyU%2FMJGVqtmrIIjxUP8%3D.1600764323
+15:50:54:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F7ee2cde1c56a41c74bfa5a231e38a68adc0490645ba9e427ecdabfdfd45bc23e&x-bce-range=0-142&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.qe1mTbG3z8v9ddbIuUkjSDRWYyU%2FMJGVqtmrIIjxUP8%3D.1600764323, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_3.dat, nUncompress = 0
+15:50:55:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:50:55:AddExportPDFTask. i:0, status:107,downloadstatus:2,ListItem:0,婚内忠诚协议
+15:50:55:in AddExportPDFTask. i equal size. i = 1.
+15:50:56:download finish, uTaskId = 7, status = 206, downloaded = 143, content-length = 143
+15:50:56:status = 206, uTaskId = 7
+15:50:56:DownloadFile taskid = 7, nThreadId = 12, nIndex = 0, url = https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F7ee2cde1c56a41c74bfa5a231e38a68adc0490645ba9e427ecdabfdfd45bc23e&x-bce-range=143-&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6h85qSv7iZdsascn0DYxkyKj36hXNzjSJmd3nf4lHX0%3D.1600764323
+15:50:56:DownloadFileCallBackWithCurl url= https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F7ee2cde1c56a41c74bfa5a231e38a68adc0490645ba9e427ecdabfdfd45bc23e&x-bce-range=143-&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6h85qSv7iZdsascn0DYxkyKj36hXNzjSJmd3nf4lHX0%3D.1600764323, uerproxy = 0, method = 3, save = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_4.dat, nUncompress = 0
+15:50:57:download finish, uTaskId = 7, status = 206, downloaded = 143, content-length = 143
+15:50:57:status = 206, uTaskId = 7
+15:50:57:UpdateTaskStatus. status:-5, url:https://wkbjcloudbos.bdimg.com/v1/docconvert6998//wk/4f5a3e638cc70f69dd3f577ce83e353e/0.png?responseCacheControl=max-age%3D3888000&responseExpires=Fri%2C%2006%20Nov%202020%2015%3A45%3A23%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2020-09-22T07%3A45%3A23Z%2F3600%2Fhost%2F7ee2cde1c56a41c74bfa5a231e38a68adc0490645ba9e427ecdabfdfd45bc23e&x-bce-range=143-&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTYwMDc2NDMyMywidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiLCJ4LWJjZS1yYW5nZSJdfQ%3D%3D.6h85qSv7iZdsascn0DYxkyKj36hXNzjSJmd3nf4lHX0%3D.1600764323, m_sSavePath:C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kdocin\b_0fe0bb91970590c69ec3d5bbfd0a79563c1ed4a8_4.dat
+15:50:57:AddExportPDFTask. size = 1, m_nExportTask = 0.
+15:50:57:AddExportPDFTask. i:0, status:-5,downloadstatus:1,ListItem:0,婚内忠诚协议
+15:50:57:ExportPdfFile html, taskid = 7, nThreadId = 13, nIndex = 0, m_sPdfFileName = C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kpdf\婚内忠诚协议.pdf
+15:50:58:ExportPDFFromHTMLCallBack uTaskId = 7, uId = 13, uMsgId = 851975, res = 0, m_sReaderType=html, m_sPdfFileName=C:\Users\matthew.xu\Desktop\xzy_git\apk&installer\Fish-v3212\kpdf\婚内忠诚协议.pdf
+15:50:58:begin to export
+15:51:02:end to export
+15:51:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:26:OnRClickListMenu nID:38301
+15:51:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:51:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:52:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:25:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:28:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:31:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:34:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:37:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:40:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:43:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:46:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:49:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:52:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:55:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:53:58:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:01:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:04:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:07:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:10:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:13:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:16:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:19:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:22:AddExportPDFTask. size = 0, m_nExportTask = 0.
+15:54:25:end
