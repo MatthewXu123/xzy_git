@@ -1,0 +1,99 @@
+{
+  "inbound": [
+    {
+      "localPort": 10808,
+      "protocol": "socks",
+      "udpEnabled": true,
+      "sniffingEnabled": true
+    }
+  ],
+  "logEnabled": false,
+  "loglevel": "warning",
+  "index": 0,
+  "vmess": [
+    {
+      "configVersion": 2,
+      "address": "qpeicsd24.euewid9.xyz",
+      "port": 443,
+      "id": "a56579ce-5b7a-4df8-8a39-89be1e41e57b",
+      "alterId": 444,
+      "security": "auto",
+      "network": "ws",
+      "remarks": "qpeicsd24.euewid9.xyz",
+      "headerType": "none",
+      "requestHost": "qpeicsd24.euewid9.xyz",
+      "path": "/d357355b1d7e86/",
+      "streamSecurity": "tls",
+      "allowInsecure": "False",
+      "configType": 1,
+      "testResult": "",
+      "subid": ""
+    },
+    {
+      "configVersion": 2,
+      "address": "qpeicsd21.euewid9.xyz",
+      "port": 443,
+      "id": "2809429b-d79e-4a6b-bf9d-84c109496c78",
+      "alterId": 444,
+      "security": "auto",
+      "network": "ws",
+      "remarks": "qpeicsd21.euewid9.xyz",
+      "headerType": "none",
+      "requestHost": "qpeicsd21.euewid9.xyz",
+      "path": "/b2b3b562e83f/",
+      "streamSecurity": "tls",
+      "allowInsecure": "False",
+      "configType": 1,
+      "testResult": "",
+      "subid": ""
+    }
+  ],
+  "muxEnabled": true,
+  "domainStrategy": "IPIfNonMatch",
+  "routingMode": "0",
+  "useragent": [],
+  "userdirect": [],
+  "userblock": [],
+  "kcpItem": {
+    "mtu": 1350,
+    "tti": 50,
+    "uplinkCapacity": 12,
+    "downlinkCapacity": 100,
+    "congestion": false,
+    "readBufferSize": 2,
+    "writeBufferSize": 2
+  },
+  "listenerType": 1,
+  "speedTestUrl": "http://speedtest-sgp1.digitalocean.com/10mb.test",
+  "speedPingTestUrl": "https://www.google.com/generate_204",
+  "urlGFWList": "https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt",
+  "allowLANConn": false,
+  "enableStatistics": false,
+  "keepOlderDedupl": false,
+  "statisticsFreshRate": 2000,
+  "remoteDNS": null,
+  "defAllowInsecure": false,
+  "subItem": [
+    {
+      "id": "ab2e0010-7248-408c-ba93-39829671d3a6",
+      "remarks": "import sub",
+      "url": "http://127.0.0.1:10810/pac/?t=104330",
+      "enabled": true
+    }
+  ],
+  "uiItem": {
+    "mainSize": "1287, 788",
+    "mainLvColWidth": {
+      "def": 30,
+      "configType": 80,
+      "remarks": 100,
+      "address": 120,
+      "port": 50,
+      "security": 90,
+      "network": 213,
+      "subRemarks": 50,
+      "testResult": 70
+    }
+  },
+  "userPacRule": []
+}
